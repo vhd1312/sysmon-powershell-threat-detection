@@ -11,3 +11,4 @@ Detection of suspicious PowerShell execution using Sysmon process creation telem
 
 ### Detection Output (Python Script)
 ![Alert Output](screenshots/alert-output.png)
+![Alert Output](screenshots/alert-output_1.png)
