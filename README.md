@@ -6,9 +6,22 @@ Detection of suspicious PowerShell execution using Sysmon process creation telem
 
 ## Detection Workflow
 
-### PowerShell Execution (Simulated Attack)
-![PowerShell Commands](screenshots/command-run.png)
+### 1. Suspicious PowerShell Execution
+The following commands were executed to generate Sysmon process creation events:
 
-### Detection Output (Python Script)
-![Alert Output](screenshots/alert-output.png)
-![Alert Output](screenshots/detection-summary.png)
+![PowerShell Command Execution](screenshots/command-run.png)
+
+---
+
+### 2. Detection Alerts
+The Python detection script identifies suspicious PowerShell flags such as
+`-ExecutionPolicy Bypass` and `-NoProfile`:
+
+![Detection Alerts](screenshots/alert-output.png)
+
+---
+
+### 3. Detection Summary
+The script also outputs a summary showing total events scanned and alerts generated:
+
+![Detection Summary](screenshots/detection-summary.png)
